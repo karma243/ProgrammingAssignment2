@@ -25,7 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This functino uses makeCacheMatrix function to give inverse of a matrix. First of all it'll create a cahce file
-## with the help of makeCacheMatrix function and then read the cahce file to give inverse
+## with the help of makeCacheMatrix function and then read the cahce file to give inverse. Basically the return value 
+## is coming by reading the cache file only. If there is no cache file to read, my functino will first create a cache 
+##file and then read it.
 
 cacheSolve <- function(x, ...) {
   source("makeCacheMatrix.R")
